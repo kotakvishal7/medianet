@@ -4,10 +4,11 @@
   </head>
   <body>
     <form>
-      <input type="file" id="FILE" name="filename">
+      <input type="file" name="fileName" [(ngModel)]="fileName">
       <br />
       <br />
-      <input type="submit" value="Submit">
+      <input type="submit" value="Upload" (click)="uploadImage(fileName)">
     </form>
+    {{ fileName }}
   </body>
 </html>
